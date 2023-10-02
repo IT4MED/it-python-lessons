@@ -3,6 +3,8 @@ def calculate_bmi(weight, height):
         weight = float(weight)
         height = float(height)
         bmi = weight / (height ** 2)
+        if (bmi<1):
+            return None
         return bmi
     except ValueError:
         return None
