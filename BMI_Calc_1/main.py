@@ -6,6 +6,7 @@ def calculate_bmi(weight, height):
         if (bmi<1):
             return None
         return bmi
+        print('sas')
     except ValueError:
         return None
     except ZeroDivisionError:
