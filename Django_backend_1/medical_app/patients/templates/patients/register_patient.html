@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пациента</title>
+</head>
+<body>
+    <h1>Регистрация пациента</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="age">Возраст:</label>
+        <input type="number" name="age" id="age" required>
+        <br>
+        <label for="gender">Пол:</label>
+        <input type="text" name="gender" id="gender" required>
+        <br>
+        <input type="submit" value="Зарегистрировать">
+    </form>
+</body>
+</html>
