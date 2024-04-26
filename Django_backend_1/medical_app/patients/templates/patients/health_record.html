@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Внесение данных о здоровье</title>
+</head>
+<body>
+    <h1>Внесение данных о здоровье</h1>
+    <p>Пациент: {{ patient.name }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="blood_pressure">Артериальное давление:</label>
+        <input type="text" name="blood_pressure" required>
+        <br>
+        <label for="pulse">Пульс:</label>
+        <input type="number" name="pulse" required>
+        <br>
+        <label for="temperature">Температура:</label>
+        <input type="number" name="temperature" required>
+        <br>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+</html>
